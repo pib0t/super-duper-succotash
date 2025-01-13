@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Button } from '../components/Button'
 
 export default function Home() {
   return (
@@ -13,7 +14,11 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-4">
           Welcome to <a href="https://nextjs.org" className="text-blue-600 hover:text-blue-800">Next.js!</a>
         </h1>
-        <p className="text-lg">With Tailwind CSS</p>
+        <p className="text-lg mb-8">With Tailwind CSS</p>
+        <div className="flex gap-4">
+          <Button primary label="Primary Button" />
+          <Button label="Secondary Button" />
+        </div>
       </main>
     </div>
   )
