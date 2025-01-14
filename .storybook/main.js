@@ -1,9 +1,8 @@
 module.exports = {
-  stories: ['../**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  stories: ['../components/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/addon-links',
   ],
   framework: {
     name: '@storybook/nextjs',
