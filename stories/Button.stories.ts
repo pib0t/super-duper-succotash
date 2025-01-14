@@ -26,7 +26,8 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: 'Button',
-    backgroundColor: "#522a2a"
+    backgroundColor: "#32a5b2",
+    size: "medium"
   },
 };
 

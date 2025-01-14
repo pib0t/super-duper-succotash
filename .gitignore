@@ -2,5 +2,9 @@
 .env
 node_modules
 *storybook.log
+<<<<<<< HEAD
 .next
 storybook-static
+=======
+.next
+>>>>>>> b0e1fb3 (Remove .next folder from Git tracking and add it to .gitignore)
