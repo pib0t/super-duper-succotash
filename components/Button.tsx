@@ -14,6 +14,9 @@ export const Button = ({
   primary = false,
   size = 'medium',
   label,
+  disabled = false,
+  loading = false,
+  icon,
   ...props
 }: ButtonProps) => {
   const baseStyles = 'font-semibold rounded-full flex items-center justify-center gap-2';
