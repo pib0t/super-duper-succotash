@@ -23,13 +23,14 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: "toller Button",
-    size: "medium"
+    size: "small"
   },
 };
 
 export const Secondary: Story = {
   args: {
     label: 'Button',
+    size: "small"
   },
 };
 
