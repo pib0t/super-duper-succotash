@@ -12,6 +12,12 @@ const meta: Meta<typeof Button> = {
       options: ['small', 'medium', 'large'],
     },
     label: { control: 'text' },
+    disabled: { control: 'boolean' },
+    loading: { control: 'boolean' },
+    icon: {
+      control: { type: 'select' },
+      options: ['download', 'upload', 'refresh', 'settings'],
+    },
   },
 };
 
@@ -46,6 +52,30 @@ export const Small: Story = {
   args: {
     size: 'small',
     label: 'Button',
+    primary: true
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    label: 'Disabled Button',
+    disabled: true,
+    primary: true
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    label: 'Loading...',
+    loading: true,
+    primary: true
+  },
+};
+
+export const WithIcon: Story = {
+  args: {
+    label: 'Download',
+    icon: 'download',
     primary: true
   },
 };
